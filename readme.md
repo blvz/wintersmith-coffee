@@ -6,8 +6,6 @@
 
 `npm install wintersmith-livescript`
 
-    npm install wintersmith-livescript
-
 then add `./node_modules/wintersmith-livescript/` to `config.json` like:
 
     {
