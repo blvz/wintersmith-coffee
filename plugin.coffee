@@ -12,8 +12,7 @@ module.exports = (env, callback) ->
     getView: ->
       return (env, locals, contents, templates, callback) ->
         try
-          js = LiveScript.compile @_text,
-            literate: LiveScript.helpers.isLiterate @_filepath.full
+          js = LiveScript.compile @_text
           callback null, new Buffer js
         catch error
           callback error
