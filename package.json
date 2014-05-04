@@ -1,16 +1,14 @@
 {
-  "name": "wintersmith-coffee",
+  "name": "wintersmith-livescript",
   "version": "0.2.1",
-  "author": "mnmly <i.am@mnmly.com>",
-  "description": "coffeescript plugin for wintersmith",
+  "author": "blvz <rafael@blvz.im>",
+  "description": "LiveScript plugin for wintersmith",
   "license": "MIT",
   "dependencies": {
-    "async": ">= 0.0.1",
-    "coffee-script": ">=1.2.x"
+    "LiveScript": ">=1.2.x"
   },
 
   "devDependencies": {
-    "wintersmith": ">=2.0.0",
-    "mocha": ">=1.0.0"
+    "wintersmith": ">=2.0.0"
   }
 }

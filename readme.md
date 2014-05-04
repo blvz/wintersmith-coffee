@@ -1,14 +1,14 @@
-# wintersmith-coffee
+# wintersmith-livescript
 
-[CoffeeScript](http://coffeescript.org/) plugin for [wintersmith](https://github.com/jnordberg/wintersmith).
+[LiveScript](http://livescript.net/) plugin for [wintersmith](https://github.com/jnordberg/wintersmith).
 
 ### install:
 
-`npm install wintersmith-coffee`
+`npm install wintersmith-livescript`
 
-    npm install wintersmith-coffee
-  
-then add `./node_modules/wintersmith-coffee/` to `config.json` like:
+    npm install wintersmith-livescript
+
+then add `./node_modules/wintersmith-livescript/` to `config.json` like:
 
     {
       "locals": {
@@ -19,13 +19,6 @@ then add `./node_modules/wintersmith-coffee/` to `config.json` like:
         "index_articles": 3
       },
       "plugins": [
-        "./node_modules/wintersmith-coffee/"
+        "./node_modules/wintersmith-livescript/"
       ]
     }
-    
-
-### Test
-
-Test is written using [Mocha](http://visionmedia.github.com/mocha/). Install it globally, then run
-
-    $ mocha --compilers coffee:coffee-script
