@@ -1,9 +1,11 @@
 {
   "name": "wintersmith-livescript",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "blvz <rafael@blvz.im>",
   "description": "LiveScript plugin for wintersmith",
   "license": "MIT",
+  "keywords": ["wintersmith-plugin"],
+  "repository": "https://github.com/blvz/wintersmith-livescript",
   "dependencies": {
     "LiveScript": ">=1.2.x"
   },
