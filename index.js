@@ -1,2 +1,2 @@
-require('coffee-script');
+require('LiveScript');
 module.exports = require('./plugin');
