@@ -2,22 +2,19 @@ require! fs
 
 module.exports = (env, cb) ->
   class LiveScriptPlugin extends env.ContentPlugin
-    (@_filepath, @_text) ->
+    (@path, @body) ->
 
-    get-filename: -> @_filepath.relative.replace /(ls)$/, 'js'
+    get-filename: -> @path.relative.replace /\.ls$/ \.js
 
     get-view: ->
       (env, locals, contents, templates, cb) ->
-        try
-          js = LiveScript.compile @_text
-          cb? null, new Buffer js
-        catch err
-          cb? err
+        try cb? null, new Buffer LiveScript.compile @body
+        catch then cb? e
 
   LiveScriptPlugin.from-file = (filepath, cb) ->
     err, bf <- fs.read-file filepath.full
-    if err then cb? err
-    else cb?! null, new LiveScriptPlugin(filepath, bf.toString!)
+    if err then cb? that
+           else cb? null new LiveScriptPlugin filepath, bf.toString!
 
-  env.register-content-plugin 'livescript', '**/*.*(ls)', LiveScriptPlugin
+  env.register-content-plugin \livescript \**/*.ls LiveScriptPlugin
   cb?!

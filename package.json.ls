@@ -1,12 +1,12 @@
-name:         'wintersmith-livescript'
-version:      '0.3.0'
+name:         \wintersmith-livescript
+version:      \0.3.1
 author:       'blvz <rafael@blvz.im>'
 description:  'LiveScript plugin for wintersmith'
-license:      'MIT'
+license:      \MIT
 keywords:     <[ wintersmith-plugin ]>
-repository:   'https://github.com/blvz/wintersmith-livescript'
+repository:   \https://github.com/blvz/wintersmith-livescript
 
 dependencies:
-  LiveScript: '^1.2'
+  LiveScript: \^1.2
 devDependencies:
-  wintersmith: '^2'
+  wintersmith: \^2

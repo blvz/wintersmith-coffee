@@ -1,4 +1,4 @@
 <- $ document .ready
-(event) <- $ "button" .click
-title = $ @ .html!
-alert "You clicked the #title button."
+e <- $ \button .click
+title = $ @ .text!
+alert "You've clicked the #title button."
